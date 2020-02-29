@@ -1,0 +1,20 @@
+<%- include ('../partials/header.ejs') %>
+    <a href="/" class="nav-link">Home</a>
+    <form class="form-signin" enctype="multipart/form-data" action="/register" method="post">
+        <img class="mb-4" src="/public/assets/images/logo.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="true" autofocus="">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="true">
+        <label for="inputConfirmPassword" class="sr-only">Confirm Password</label>
+        <input name="consfirmPassword" type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm password" required="true">
+        <label for="profilePic" class="sr-only">Profile Picture</label>
+        <input type="file" id="profilePic" class="form-control">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        Already registered user <a href="/login">login</a>
+        <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "node-mysql-crud",
+  "version": "1.0.0",
+  "description": "The node demo application with mysql crud operation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagadalerohan/node-mysql-crud.git"
+  },
+  "keywords": [
+    "Node",
+    "MySQL",
+    "CRUD"
+  ],
+  "author": "jagadalerohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagadalerohan/node-mysql-crud/issues"
+  },
+  "homepage": "https://github.com/jagadalerohan/node-mysql-crud#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dateformat": "^3.0.3",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "mysql": "^2.18.1",
+    "req-flash": "0.0.3"
+  }
+}
