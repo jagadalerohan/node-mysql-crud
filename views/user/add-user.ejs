@@ -1,0 +1,41 @@
+<%- include ('../user/header.ejs') %>
+    <div class="page-wrapper">
+        <nav class="navbar navbar-light bg-light">
+            <a class="float-left" href="/user" title="back">back</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        <form class="add-player-form" action="/user/add" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="<%= (user)?  user.id : '' %>">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input value="<%= (user)?  user.first_name : '' %>" type="text" class="form-control" name="first_name" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input value="<%= (user)?  user.last_name : '' %>"type="text" class="form-control" name="last_name" id="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input value="<%= (user)?  user.email : '' %>"type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input value="<%= (user)?  user.password : '' %>" type="password" class="form-control" name="password" id="password" placeholder="password" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12">
+                    <label for="player-img"><b>User Image</b></label><br>
+                    <input type="file" name="image" id="player-img">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Add User</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
