@@ -3,7 +3,7 @@
 Sample project for node js with Express and MySql crud operation.
 Ignore the HTML and css part from it as this is just sample project for node js.
 
-More things are comming like docker and proper desining....
+More things are comming like docker and proper architecture and css designing....
 
 ## Getting Started
 
